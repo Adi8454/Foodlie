@@ -1,72 +1,124 @@
 <img width="1366" height="644" alt="image" src="https://github.com/user-attachments/assets/a3ade7c9-51f9-45aa-bc9c-394066929746" />
 
-# Getting Started with Create React App
+🍔 Foodlie – MERN Food Delivery Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Foodlie is a full-stack food delivery web application built using the MERN stack. It allows users to explore restaurants, order food online, and track their orders with a seamless and responsive user experience.
 
-## Available Scripts
+🚀 Features
+🛒 Browse restaurants and food items
+🔍 Search and filter meals
+🧾 Add to cart & manage orders
+💳 Secure online payment integration
+👤 User authentication (JWT-based login/signup)
+📦 Order tracking system
+🛠️ Admin dashboard for managing users, food items & orders
+⚡ Responsive UI for mobile and desktop
+🛠️ Tech Stack
 
-In the project directory, you can run:
+Frontend:
 
-### `npm start`
+React.js
+Redux (or Context API)
+HTML5, CSS3, JavaScript
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Backend:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Node.js
+Express.js
 
-### `npm test`
+Database:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+MongoDB
 
-### `npm run build`
+Other Tools:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+JWT
+Stripe / Razorpay
+📂 Project Structure
+Foodlie/
+│── client/                # React frontend
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── redux/
+│   │   └── App.js
+│
+│── server/                # Node + Express backend
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   └── server.js
+│
+│── .env
+│── package.json
+⚙️ Installation & Setup
+1️⃣ Clone the repository
+git clone https://github.com/your-username/foodlie.git
+cd foodlie
+2️⃣ Install dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Frontend:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+cd client
+npm install
 
-### `npm run eject`
+Backend:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+cd server
+npm install
+3️⃣ Setup Environment Variables
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Create a .env file in the server folder:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+STRIPE_KEY=your_payment_key
+4️⃣ Run the application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Backend:
 
-## Learn More
+cd server
+npm run server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Frontend:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+cd client
+npm start
+🌐 Open in Browser
+http://localhost:3000
+🔐 Authentication Flow
+Users register/login
+Passwords are hashed using bcrypt
+JWT tokens are generated and stored
+Protected routes require authentication
+📸 Screenshots
+🏠 Home Page
+🍽️ Food Listings
+🛒 Cart Page
+💳 Checkout
+🛠️ Admin Dashboard
 
-### Code Splitting
+url :- https://ais-pre-dcbfx6q2wmqfbxkmcltcsv-669348230654.asia-southeast1.run.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+(Add images here)
 
-### Analyzing the Bundle Size
+📌 Future Enhancements
+📍 Live order tracking with maps
+🤖 AI-based food recommendations
+📱 Progressive Web App (PWA) support
+🌍 Multi-language support
+🔔 Push notifications
+🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Pull requests are welcome. For major changes, open an issue first to discuss what you’d like to change.
 
-### Making a Progressive Web App
+📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License.
 
-### Advanced Configuration
+👨‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Aditya Kumar
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
