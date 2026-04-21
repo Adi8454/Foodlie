@@ -1,3 +1,5 @@
+<img width="1366" height="644" alt="image" src="https://github.com/user-attachments/assets/a3ade7c9-51f9-45aa-bc9c-394066929746" />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
